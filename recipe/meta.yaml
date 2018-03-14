@@ -9,10 +9,6 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/rhash/RHash/archive/v{{ version }}.tar.gz
   sha256: 8ce2f1f4ea0abd24f3a8377944478a82b3bbdaae5c048d0ab7cc58d7058028c2
-  patches:
-    # osx port patch, not accepted upstream
-    # https://sourceforge.net/p/rhash/feature-requests/23/
-    - librhash-osx.patch  # [osx]
 
 build:
   number: 0
