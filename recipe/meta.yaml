@@ -30,7 +30,7 @@ test:
     - test -f "$PREFIX/lib/librhash.so.1"  # [linux]
     - test -f "$PREFIX/lib/librhash.1.dylib"  # [osx]
     # Ensure the library has the correct install_name
-    - otool -l ./librhash/librhash.1.4.6.dylib | grep name | grep librhash.1.dylib  # [osx]
+    - otool -l $PREFIX/lib/librhash.{{ version }}.dylib | grep name | grep librhash.1.dylib  # [osx]
     - rhash --version
 
 about:
