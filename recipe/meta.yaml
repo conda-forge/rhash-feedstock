@@ -9,6 +9,7 @@ source:
   url: https://github.com/rhash/RHash/archive/v{{ version }}.tar.gz
   sha256: 9f6019cfeeae8ace7067ad22da4e4f857bb2cfa6c2deaa2258f55b2227ec937a
   patches:
+    # https://github.com/rhash/RHash/pull/285
     - 0001-Fix-install_name-on-OSX.patch
 
 build:
