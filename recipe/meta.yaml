@@ -25,6 +25,8 @@ requirements:
     - make  # [unix]
 
 test:
+  requires:
+    - cctools  # [osx]
   commands:
     - test -f "$PREFIX/include/rhash.h"
     - test -f "$PREFIX/lib/librhash${SHLIB_EXT}"  # [unix]
